@@ -52,7 +52,7 @@ def sha1(message):
     
     return ''.join(f'{h:08x}' for h in [H0, H1, H2, H3, H4])
 
-# Test
+# **Test**
 message = b"Burak"
 hash_value = sha1(message)
 print("SHA-1 Hash:", hash_value)
