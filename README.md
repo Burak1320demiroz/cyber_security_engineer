@@ -7,4 +7,4 @@ Wordlist dosya yolunu girin: ...\wordlist.txt
 
 [+] Parola bulundu: Burak
 
-PS C:\Users\burak\OneDrive\Desktop\code>
+
