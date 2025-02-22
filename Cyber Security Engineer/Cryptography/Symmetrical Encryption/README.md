@@ -10,3 +10,5 @@
 - DES (Data Encryption Standard) (Veri Şifreleme Standardı) !Günümüzde zayıf kabul edilir!
     - 56 bit anahtar uzunluğu kullanır.
     
+- RSA
+- 3DES (Triple DES)
