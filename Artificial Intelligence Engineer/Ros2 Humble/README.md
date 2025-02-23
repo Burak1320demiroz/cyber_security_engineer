@@ -120,3 +120,13 @@
 - sensor_msgs/msg/Image	   __   Kamera görüntü verisi	      __Görüntü işleme, nesne algılama
 
 -------------------------------------
+
+### (  ...~$ ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.2, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}" -r 10 )
+
+- ros2 topic pub → ROS 2’de bir topic’e veri yayınlamak için kullanılır.
+- /cmd_vel → Robotun hareket komutlarını aldığı topic’tir.
+- geometry_msgs/msg/Twist → Gönderilen mesaj tipi.
+- "{linear: {x: 0.2, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}" → Mesajın içeriği (hız bilgileri).
+- -r 10 → Komutun 10 Hz (saniyede 10 kez) tekrar edilmesini sağlar.
+
+-------------------------------------
