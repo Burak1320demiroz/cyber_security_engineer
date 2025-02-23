@@ -32,7 +32,7 @@ Nasıl Çalışır?
 (  ...~$ echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc )
 
 - echo  ==> "export TURTLEBOT3_MODEL=burger" komutunu ekrana yazdırır.
-- >> ~/.bashrc  ==> Bu komutun çıktısını ~/.bashrc dosyasının sonuna ekler
+- ~/.bashrc  ==> Bu komutun çıktısını ~/.bashrc dosyasının sonuna ekler
 - ~/.bashrc  ==> terminal açıldığında otomatik çalıştırılan bir betik dosyadır.
 
 -------------------------------------
