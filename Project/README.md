@@ -1,5 +1,6 @@
 # Project
+##### Geliştirdiğim, kullandığım veya eğitim amaclı yaralandığım projeler.
 
-- API
-- Python
-- Web
+- API Development
+- Python Development
+- Web Development
