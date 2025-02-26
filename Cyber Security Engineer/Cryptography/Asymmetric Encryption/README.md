@@ -1,8 +1,8 @@
 # Asymmetric Encryption
 
 ##### Asimetrik Şifreleme (Asymmetric Encryption), bir çift anahtar kullanarak veri şifreleyen bir kriptografi yöntemidir. Bu anahtar çifti şunlardan oluşur ==> 
-    - Genel Anahtar (Public Key): Şifreleme için kullanılır ve herkesle paylaşılabilir.
-    - Özel Anahtar (Private Key): Şifrelenmiş verinin çözülmesi (decryption) için kullanılır ve gizli tutulmalıdır.
+- Genel Anahtar (Public Key): Şifreleme için kullanılır ve herkesle paylaşılabilir.
+- Özel Anahtar (Private Key): Şifrelenmiş verinin çözülmesi (decryption) için kullanılır ve gizli tutulmalıdır.
 
 -------------------------------------
 
