@@ -1,6 +1,27 @@
 # Notlar
 
 - Cyber Security Engineer
+    - Cryptography
+        - Asymmetric Encryption
+        - Brute_Force_Attack
+        - Hash_Function
+        - Symmetrical Encryption
+    - Web Seculrity
+        - SQL İnjection
+        - Path Traversal (Yol Geçişi)
+        - Information disclosure vulnerabilities ( Bilgi ifşası güvenlik açıkları)
+        - File upload vulnerabilities (Dosya yükleme güvenlik açıkları)
+        - OS command injection (İşletim sistemi komut enjeksiyonu)
+    - Web Development
+        - HyperText Markup Language (.html)
+        - Cascading Style Sheets (.css)
+        - JavaScript (.js)
 - Artificial_Intelligence_Engineer
+    - Machine Learning
+    - Python Development
+    - Ros2 Humble
 - Math
 - Project (Geliştirdiğim veya kullandığım Projeler.)
+    - API Development
+    - Python Development
+    - Web Development
