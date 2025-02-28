@@ -1,6 +1,6 @@
 # Notlar
 
-- Cyber Security Engineer
+### - Cyber Security Engineer
     - Cryptography
         - Asymmetric Encryption
         - Brute_Force_Attack
@@ -12,16 +12,20 @@
         - Information disclosure vulnerabilities ( Bilgi ifşası güvenlik açıkları)
         - File upload vulnerabilities (Dosya yükleme güvenlik açıkları)
         - OS command injection (İşletim sistemi komut enjeksiyonu)
-    - Web Development
-        - HyperText Markup Language (.html)
-        - Cascading Style Sheets (.css)
-        - JavaScript (.js)
-- Artificial_Intelligence_Engineer
+    - How does the internet work? (İnternet nasıl calışır?)
+    - Project (Geliştirdiğim veya kullandığım Basit Projeler.)
+### - Artificial_Intelligence_Engineer
     - Machine Learning
     - Python Development
     - Ros2 Humble
-- Math
-- Project (Geliştirdiğim veya kullandığım Projeler.)
+    - Docker
+    - Basit Terminal Codları
+    - Project (Geliştirdiğim veya kullandığım Basit Projeler.)
+### - Math
+    - Project (Geliştirdiğim veya kullandığım Basit Projeler.)
+### - Web Development
+    - HyperText Markup Language (.html)
+    - Cascading Style Sheets (.css)
+    - JavaScript (.js)
     - API Development
-    - Python Development
-    - Web Development
+    - Project (Geliştirdiğim veya kullandığım Basit Projeler.)
