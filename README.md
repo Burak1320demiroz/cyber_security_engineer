@@ -15,18 +15,13 @@
     - Information disclosure vulnerabilities ( Bilgi ifşası güvenlik açıkları)
     - File upload vulnerabilities (Dosya yükleme güvenlik açıkları)
     - OS command injection (İşletim sistemi komut enjeksiyonu)
-- How does the internet work? (İnternet nasıl calışır?)
 - Kali Linux
 ### Artificial_Intelligence_Engineer
-- Machine Learning
-- Python Development
 - Ros2 Humble
-- Docker
-- İmage Processing Models (Görüntü İşleme Modelleri)
 ### Math
 ### Web Development
 - HyperText Markup Language (.html)
 - Cascading Style Sheets (.css)
 - JavaScript (.js)
-- Project (Geliştirdiğim veya kullandığım Basit Projeler.)
-    - API_Development_Projects
+### Project (Geliştirdiğim veya kullandığım Basit Projeler.)
+- API_Development_Projects
