@@ -130,3 +130,9 @@
 - -r 10 → Komutun 10 Hz (saniyede 10 kez) tekrar edilmesini sağlar.
 
 -------------------------------------
+
+source /opt/ros/humble/setup.bash
+source ~/ros2_ws/install/setup.bash
+source ~/.bashrc
+echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
+echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc

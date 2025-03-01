@@ -13,13 +13,13 @@
     - File upload vulnerabilities (Dosya yükleme güvenlik açıkları)
     - OS command injection (İşletim sistemi komut enjeksiyonu)
 - How does the internet work? (İnternet nasıl calışır?)
-- Project (Geliştirdiğim veya kullandığım Basit Projeler.)
+- Kali Linux
 ### Artificial_Intelligence_Engineer
 - Machine Learning
 - Python Development
 - Ros2 Humble
 - Docker
-- Basit Terminal Codları
+- İmage Processing Models (Görüntü İşleme Modelleri)
 - Project (Geliştirdiğim veya kullandığım Basit Projeler.)
 ### Math
 - Project (Geliştirdiğim veya kullandığım Basit Projeler.)
@@ -27,5 +27,5 @@
 - HyperText Markup Language (.html)
 - Cascading Style Sheets (.css)
 - JavaScript (.js)
-- API Development
 - Project (Geliştirdiğim veya kullandığım Basit Projeler.)
+    - API_Development_Projects

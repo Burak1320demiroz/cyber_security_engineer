@@ -1,1 +1,0 @@
-# Basit Terminal Codları
