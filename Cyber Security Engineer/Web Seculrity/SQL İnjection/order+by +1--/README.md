@@ -8,7 +8,8 @@
 ### administrator'--
 - ==> SELECT * FROM products WHERE category = 'Pets' ORDER BY 1--';
     - ' → Stringi kapatır.
-    - ORDER BY 1 → Sonuçları ilk sütuna göre sıralar.
+    - ORDER BY 1 → Sonuçları ilk sütuna göre sıralar. 
+        - 1,2,3,... hata alana kadar yaz sütün sayısını öğren.
     - -- → Geri kalan kısmı yorum satırına çevirerek sorgunun orijinal yapısını bozar.
 
 -------------------------------------

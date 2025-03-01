@@ -11,6 +11,7 @@
         - or+1=1--'
         - administrator'--
         - order+by +1--
+        - UNION
     - Path Traversal (Yol Geçişi)
     - Information disclosure vulnerabilities ( Bilgi ifşası güvenlik açıkları)
     - File upload vulnerabilities (Dosya yükleme güvenlik açıkları)
