@@ -8,8 +8,9 @@
     - Symmetrical Encryption
 - Web Seculrity
     - SQL İnjection
-        - or+1=1--'_and_administrator'--
-        - UNION
+        - Classic SQL Injection
+        - UNION attacks
+        - Blind SQL injection
     - Path Traversal (Yol Geçişi)
     - Information disclosure vulnerabilities ( Bilgi ifşası güvenlik açıkları)
     - File upload vulnerabilities (Dosya yükleme güvenlik açıkları)
@@ -22,5 +23,5 @@
 - HyperText Markup Language (.html)
 - Cascading Style Sheets (.css)
 - JavaScript (.js)
-### Project (Geliştirdiğim veya kullandığım Basit Projeler.)
+### Project
 - API_Development_Projects
