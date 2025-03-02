@@ -25,6 +25,13 @@
 
 -------------------------------------
 
+### administrator'--
+- ==> SELECT * FROM users WHERE username = 'administrator'--' AND password = 'sifre';
+    - -- SQL'de yorum satırı başlatır, yani AND password = 'sifre' kısmı çalışmaz.
+    - Eğer "administrator" kullanıcısının şifresi kontrol edilmeden giriş yapılıyorsa, Zafiyettir.
+
+-------------------------------------
+
 ### Nasıl Önlenir?
 - Güvenli Sorgu Kullanımı ==> !! Bunu önlemek için hazırlıklı sorgular (prepared statements) kullanmalıyız !!
 - Girdi Doğrulaması Yap (Input Validation) ==> Kullanıcıdan sadece beklenen değerleri al. 
@@ -32,3 +39,7 @@
 - DROP TABLE Yetkisini Kısıtla ==> 
     - Web uygulamasının bağlandığı veritabanı kullanıcısına sadece SELECT, INSERT, UPDATE yetkisi verilsin. 
     - DROP TABLE ve DELETE FROM gibi kritik komutları çalıştırma yetkisi olmasın.
+- Özel karakterleri engelleyin veya kaçış karakterleri (\) kullanın.
+- Şifreleri hashleyin (bcrypt, argon2 gibi algoritmalarla).
+- Web Application Firewall (WAF) gibi sistemlerle SQL enjeksiyon saldırılarını engelleyin.
+

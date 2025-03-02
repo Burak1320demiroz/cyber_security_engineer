@@ -8,9 +8,7 @@
     - Symmetrical Encryption
 - Web Seculrity
     - SQL İnjection
-        - or+1=1--'
-        - administrator'--
-        - order+by +1--
+        - or+1=1--'_and_administrator'--
         - UNION
     - Path Traversal (Yol Geçişi)
     - Information disclosure vulnerabilities ( Bilgi ifşası güvenlik açıkları)
