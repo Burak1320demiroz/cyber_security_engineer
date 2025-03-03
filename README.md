@@ -18,6 +18,7 @@
 - Kali Linux
 ### Artificial_Intelligence_Engineer
 - Ros2 Humble
+- Python_Development
 ### Math
 ### Web Development
 - HyperText Markup Language (.html)
@@ -25,3 +26,4 @@
 - JavaScript (.js)
 ### Project
 - API_Development_Projects
+- Python_math
