@@ -8,14 +8,17 @@
     - Symmetrical Encryption
 - Web Seculrity
     - SQL İnjection
-        - Classic SQL Injection
-        - UNION attacks
+        - Basit SQL Injection
+        - Union-Based SQL Injection
         - Blind SQL injection
+        - Error-Based SQL Injection
+        - Time-Based SQL Injection
     - Path Traversal (Yol Geçişi)
     - Information disclosure vulnerabilities ( Bilgi ifşası güvenlik açıkları)
     - File upload vulnerabilities (Dosya yükleme güvenlik açıkları)
     - OS command injection (İşletim sistemi komut enjeksiyonu)
-- Kali Linux
+- Basic Concepts
+    - Kali Linux
 ### Artificial_Intelligence_Engineer
 - Ros2 Humble
 - Python_Development
@@ -26,4 +29,4 @@
 - JavaScript (.js)
 ### Project
 - API_Development_Projects
-- Python_math
+- Basic_Python

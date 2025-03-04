@@ -1,10 +1,12 @@
-# Kali Linux Temel Komutlar
+# Kali Linux
 
 - apt-get clean : apt paket yöneticisi tarafından indirilen ama artık kullanılmayan paket dosyalarını siler.
 
 - apt-get update : Sistemi Günceller
 
 - apt-get upgrade : Tüm programları günceller.
+
+- ctrl + c : İşlemi sonlandırır.
 
 - ls :Aktif klasördeki tüm dosya ve klasörleri listeler.
 

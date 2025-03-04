@@ -1,4 +1,4 @@
-# Classic SQL Injection
+# Basit SQL Injection
 
 ### Tanım
 - SELECT * FROM products WHERE category = 'Gifts' AND released = 1
