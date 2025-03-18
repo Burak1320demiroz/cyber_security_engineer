@@ -1,1 +1,1 @@
-# Authentication Vulnerabilities
+# Authentication Vulnerabilities (Kimlik Doğrulama Güvenlik Açıkları)

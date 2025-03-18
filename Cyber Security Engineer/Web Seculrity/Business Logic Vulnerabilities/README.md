@@ -1,1 +1,1 @@
-# Business Logic Vulnerabilities
+# Business Logic Vulnerabilities (İş Mantığı Güvenlik Açıkları)
