@@ -1,4 +1,4 @@
-# Blind SQL injection
+# Blind SQL injection (Kör SQL enjeksiyonu)
 
 ### Tanım
 - SELECT * FROM sessions WHERE TrackingId = 'xyz123';

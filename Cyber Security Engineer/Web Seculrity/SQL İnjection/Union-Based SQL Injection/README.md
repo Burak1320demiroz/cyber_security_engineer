@@ -1,4 +1,4 @@
-# Union-Based SQL Injection
+# Union-Based SQL Injection (Birlik Tabanlı SQL Enjeksiyonu)
 
 ### Tanım
 - SELECT * FROM products WHERE category = 'Gifts' ...

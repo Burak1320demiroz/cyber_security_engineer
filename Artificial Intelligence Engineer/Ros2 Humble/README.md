@@ -131,8 +131,9 @@
 
 -------------------------------------
 
-source /opt/ros/humble/setup.bash
-source ~/ros2_ws/install/setup.bash
-source ~/.bashrc
-echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
-echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
+- source /opt/ros/humble/setup.bash
+- source ~/ros2_ws/install/setup.bash
+- source ~/.bashrc
+- echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
+- echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
+- echo 'export GAZEBO_PLUGIN_PATH=$HOME/{your_ws}/build/turtlebot3_gazebo:$GAZEBO_PLUGIN_PATH' >> ~/.bashrc

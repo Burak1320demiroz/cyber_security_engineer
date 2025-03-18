@@ -1,1 +1,1 @@
-# Time-Based SQL Injection
+# Time-Based SQL Injection (Zaman Tabanlı SQL Enjeksiyonu)
