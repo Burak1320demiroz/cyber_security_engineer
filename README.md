@@ -2,17 +2,17 @@
 
 ### Cyber Security Engineer
 - Cryptography
-   - Asymmetric Encryption
-   - Brute_Force_Attack
-   - Hash_Function
-   - Symmetrical Encryption
+   - Asymmetric_Encryption (Asimetrik Şifreleme)
+   - Symmetrical_Encryption (Simetrik Şifreleme)
+   - Brute_Force_Attack (Kaba Kuvvet Saldırısı)
+   - Hash_Function (Karma İşlev)
+   - Public_Key_Infrastructure (Açık Anahtar Altyapısı)
+      - SSL/TLS 
 - Web Seculrity
    - SQL İnjection
        - Basic SQL Injection
        - Union-Based SQL Injection
        - Blind SQL injection
-       - Error-Based SQL Injection
-       - Time-Based SQL Injection
    - Path Traversal (Yol Geçişi)
    - Information disclosure vulnerabilities ( Bilgi ifşası güvenlik açıkları)
    - File upload vulnerabilities (Dosya yükleme güvenlik açıkları)
@@ -21,14 +21,10 @@
    - Authentication Vulnerabilities (Kimlik Doğrulama Güvenlik Açıkları)
 - Basic Concepts
    - Kali Linux
-- How Does The İnternet Work
 ### Artificial_Intelligence_Engineer
 - Ros2 Humble
 - Python_Development
-### Math
 ### Web Development
-- HyperText Markup Language (.html)
-- Cascading Style Sheets (.css)
-- JavaScript (.js)
-### Project
-- API_Development_Projects
+- HyperText_Markup_Language_(.html)
+- Cascading_Style_Sheets_(.css)
+- JavaScript_(.js)

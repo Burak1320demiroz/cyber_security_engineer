@@ -1,1 +1,0 @@
-# Error-Based SQL Injection (Hata Tabanlı SQL Enjeksiyonu)
