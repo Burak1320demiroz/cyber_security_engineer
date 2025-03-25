@@ -37,7 +37,10 @@
 - cp: Kopyalamaya yarar.
 
 - mv: Dosya ve klasörleri taşımak için veya yeniden adlandırmak için kullanılır.
-
+    - mv dosya.txt /home/burak/Documents/
+    - mv eski_ad.txt yeni_ad.txt
+    - mv /home/burak/Downloads/proje /home/burak/Documents/
+    - mv dosya1.txt dosya2.txt /home/burak/Documents/
 - head: Verilen dosyanın varsayılan ilk 10 satırını görmemizi sağlar.
 
 - uname –a: İşletim sistemi hakkında bilgi almamızı sağlar.
@@ -45,3 +48,4 @@
 - whoami : Hangi kullanıcı olduğunu gösterir.
 
 - wc: Bize satır sayısı, kelime sayısını byte cinsinden boyutunu bize sıralı olarak verir.
+

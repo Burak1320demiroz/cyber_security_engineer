@@ -15,6 +15,11 @@
 
 -------------------------------------
 
-- RSA (Rivest-Shamir-Adleman)
+- RSA (Rivest–Shamir–Adleman) 
+    - 1024 bit → Günümüzde güvensiz kabul ediliyor, kırılabilir.
+    - 2048 bit → Standart güvenlik seviyesi (çoğu sistemde kullanılıyor).
+    - 3072 bit → Uzun vadede daha güvenli.
+    - 4096 bit → En güvenli ancak performansı düşürüyor.
+    - NIST (ABD Ulusal Standartlar ve Teknoloji Enstitüsü), 2048 bit ve üstünü öneriyor. 
 - ECC (Elliptic Curve Cryptography)
 - DSA (Digital Signature Algorithm)
