@@ -19,5 +19,3 @@
    - OS command injection (İşletim sistemi komut enjeksiyonu)
    - Business Logic Vulnerabilities (İş Mantığı Güvenlik Açıkları)
    - Authentication Vulnerabilities (Kimlik Doğrulama Güvenlik Açıkları)
-- Basic Concepts
-   - Kali Linux
