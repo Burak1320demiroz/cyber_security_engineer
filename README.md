@@ -1,7 +1,5 @@
 # Cyber Security Engineer
 
--------------------------------------
-
 - Cryptography
    - Asymmetric Encryption (Asimetrik Şifreleme)
    - Symmetrical Encryption (Simetrik Şifreleme)
@@ -13,6 +11,7 @@
 -------------------------------------
 
 - WEB Security
+   - HTTP and HTTPS (Hypertext Transfer Protocol)
    - SQL injection
    - Path traversal vulnerabilities (Yol Geçiş Güvenlik Açıkları)
    - Information disclosure vulnerabilities ( Bilgi ifşası güvenlik açıkları)

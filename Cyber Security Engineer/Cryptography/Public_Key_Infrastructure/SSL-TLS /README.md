@@ -23,3 +23,6 @@
 - 3️⃣ Bütünlük kontrolü için karma fonksiyonları (HMAC, SHA-256) kullanılır.
 
 -------------------------------------
+
+![...](/image/2.png)
+![...](/image/1.png)
