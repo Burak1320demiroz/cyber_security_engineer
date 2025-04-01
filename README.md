@@ -1,5 +1,7 @@
 # Cyber Security Engineer
 
+-------------------------------------
+
 - Cryptography
    - Asymmetric Encryption (Asimetrik Şifreleme)
    - Symmetrical Encryption (Simetrik Şifreleme)
@@ -7,11 +9,11 @@
    - Hash Function (Karma İşlev)
    - Public Key Infrastructure (Açık Anahtar Altyapısı)
       - SSL/TLS 
-- Web Seculrity
+
+-------------------------------------
+
+- WEB Security
    - SQL injection
-       - Basic SQL injection
-       - Union-Based SQL injection
-       - Blind SQL injection
    - Path traversal vulnerabilities (Yol Geçiş Güvenlik Açıkları)
    - Information disclosure vulnerabilities ( Bilgi ifşası güvenlik açıkları)
    - File upload vulnerabilities (Dosya yükleme güvenlik açıkları)
@@ -19,3 +21,5 @@
    - Business logic vulnerabilities (İş Mantığı Güvenlik Açıkları)
    - Authentication Vulnerabilities (Kimlik Doğrulama Güvenlik Açıkları)
    - Access control vulnerabilities (Erişim Kontrol Zaafları)
+
+-------------------------------------
