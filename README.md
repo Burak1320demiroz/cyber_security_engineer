@@ -11,7 +11,9 @@
 -------------------------------------
 
 - WEB Security
-   - HTTP and HTTPS (Hypertext Transfer Protocol)
+   - Web 
+      - Http and Https (Hypertext Transfer Protocol)
+      - How Does the Web Work? (Web Nasıl Çalışır?)
    - SQL injection
    - Path traversal vulnerabilities (Yol Geçiş Güvenlik Açıkları)
    - Information disclosure vulnerabilities ( Bilgi ifşası güvenlik açıkları)
