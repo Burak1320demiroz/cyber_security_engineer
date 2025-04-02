@@ -23,6 +23,3 @@
 - 3️⃣ Bütünlük kontrolü için karma fonksiyonları (HMAC, SHA-256) kullanılır.
 
 -------------------------------------
-
-![...](/Cyber Security Engineer/Cryptography/Public_Key_Infrastructure/SSL-TLS/image/2.png)
-![...](Cyber Security Engineer/Cryptography/Public_Key_Infrastructure/SSL-TLS//image/1.png)
