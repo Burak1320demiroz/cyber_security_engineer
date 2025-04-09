@@ -1,0 +1,3 @@
+# IDOR (Insecure Direct Object Reference)
+###### Güvenli Olmayan Doğrudan Nesne Referansları (IDOR) Nedir?
+- Güvenli olmayan doğrudan nesne referansları (IDOR), bir uygulamanın nesnelere (örneğin, dosyalar, hesaplar, veya diğer veritabanı öğeleri) doğrudan erişmek için kullanıcının girdiği verileri (URL parametreleri, form verileri vb.) kullandığı bir güvenlik açığıdır. Bu tür bir açık, erişim denetimlerinin atlatılmasına ve saldırganların yetkisiz kaynaklara erişmesine neden olabilir. IDOR, genellikle yatay ayrıcalık yükseltmesi (aynı seviyedeki kullanıcılar arasında veri erişimi) ile ilişkilidir, ancak dikey ayrıcalık yükseltmesine (farklı seviyelerdeki kullanıcılar arasındaki veri erişimi) de yol açabilir.

@@ -33,5 +33,8 @@
    - Authentication Vulnerabilities (Kimlik Doğrulama Güvenlik Açıkları)
    - Access control vulnerabilities (Erişim Kontrol Zaafları)
       - IDOR (Insecure Direct Object Reference)
+      - robots.txt
+      - API Key
+      - ID
 
 -------------------------------------
