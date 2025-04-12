@@ -63,3 +63,6 @@
   - Byte-by-byte fark analizi
   - Kelime bazlı karşılaştırma
   - Hex görünümüyle inceleme
+
+### Burp Suite Collaborator
+-  Bu saldırıda kullanılan alt alan adı, Burp Suite'in "Collaborator" özelliğiyle ilişkilidir. Bu, saldırganın hedef sunucunun dışa açılan DNS sorgularını kullanarak, hedef sistemle etkileşimde bulunmasını sağlar. Burp Suite, DNS sorgularını, HTTP isteklerini ve diğer dışa açılan bağlantıları tespit edebilir ve saldırganın hangi sistemlerle etkileşimde bulunduğunu belirleyebilir.

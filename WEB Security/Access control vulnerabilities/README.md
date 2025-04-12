@@ -1,13 +1,46 @@
 # Access control vulnerabilities
-- Erişim kontrolü, bir uygulama veya sistemde kaynaklara kimin ve hangi eylemleri gerçekleştirmeye yetkili olduğunu belirleyen kısıtlamalardır. Web uygulamaları bağlamında, erişim denetimi kimlik doğrulama ve oturum yönetimi ile ilişkilidir. Kimlik doğrulama, kullanıcının söylediği kişi olup olmadığını doğrularken, oturum yönetimi, kullanıcının sonraki isteklerini takip eder. Erişim denetimi, kullanıcının belirli bir kaynağa veya işlevselliğe erişip erişemeyeceğini belirler.
-###### Erişim Kontrolü Türleri:
-- Dikey Erişim Kontrolleri: Belirli kullanıcı türlerine, hassas işlevlere erişim izni verir. Örneğin, bir yönetici herhangi bir kullanıcının hesabını değiştirebilirken, sıradan bir kullanıcı bu işlevlere erişemez.
-- Yatay Erişim Kontrolleri: Aynı türdeki kaynaklara erişimi belirli kullanıcılara sınırlar. Örneğin, bir bankacılık uygulaması, kullanıcının sadece kendi hesabındaki işlemleri görüntülemesine izin verir.
-- Bağlam Bağımlı Erişim Denetimleri: Uygulamanın durumu veya kullanıcının uygulama ile etkileşimine bağlı olarak kaynaklara erişim sınırlandırılır. Örneğin, ödeme işlemi yapıldıktan sonra sepetin içeriği değiştirilemez.
-###### Bozuk Erişim Kontrollerine Örnekler:
-- Dikey Ayrıcalık Yükseltme: Bir kullanıcı, yönetici yetkilerine sahip olmadan yönetici işlevlerine erişebiliyorsa.
-- Korumasız İşlevsellik: Bir kullanıcı, gizli URL'ler veya yönetici işlevlerine erişim sağlayabilir.
-- Parametre Tabanlı Erişim Kontrolü: Kullanıcıların rolü veya erişim hakları, URL parametrelerinde veya çerezlerde saklanıyorsa ve kullanıcı bu parametreleri değiştirebiliyorsa.
+Erişim Kontrolü, bir sistemde kullanıcıların ya da diğer nesnelerin hangi kaynaklara erişebileceğini belirleyen güvenlik mekanizmalarını ifade eder. Web uygulamalarında, bu genellikle kimlik doğrulama (kullanıcıyı doğrulama) ve oturum yönetimi (kullanıcı oturumunun takibi) ile bağlantılıdır. Ayrıca, erişim denetimi, kullanıcının hangi işlemleri yapabileceğini belirler.
+
+**Dikey Erişim Kontrolleri:**  
+Hassas işlevlere erişimi belirli kullanıcı tipleriyle sınırlayan bir mekanizmadır. Örneğin, bir yönetici diğer kullanıcıların hesaplarını değiştirebilirken, normal bir kullanıcı bunu yapamaz.
+
+**Yatay Erişim Kontrolleri:**  
+Farklı kullanıcıların, aynı türdeki kaynaklara erişim haklarını belirler. Örneğin, bir bankacılık uygulaması bir kullanıcının kendi hesaplarına erişmesini sağlarken, başka bir kullanıcının hesaplarına erişmesine engel olur.
+
+**Bağlam Bağımlı Erişim Denetimleri:**  
+Uygulamanın durumu ya da kullanıcının etkileşimlerine bağlı olarak erişimi kısıtlar. Örneğin, bir kullanıcı alışveriş sepeti içeriğini sadece ödeme yapılmadan değiştirebilir.
+
+**Bozuk Erişim Kontrolleri:**  
+Erişim kontrolü mekanizmaları düzgün çalışmadığında ortaya çıkar. Bu, bir kullanıcının yetkisi olmayan kaynaklara erişmesi ya da işlemler yapabilmesi anlamına gelir. Örneğin:
+- **Dikey Ayrıcalık Yükseltmesi:** Yönetici olmayan bir kullanıcının yönetici işlevlerine erişmesi.
+- **Yatay Ayrıcalık Yükseltmesi:** Bir kullanıcının başkasına ait verilere erişmesi.
 
 -------------------------------------
 
+### **`/admin-roles?username=carlos&action=upgrade`**
+   - Bu, bir kullanıcının (`carlos`) admin rolüne yükseltilmesi için yapılan bir istek gibi görünüyor.
+   - Eğer bu endpoint doğrulama yapmıyorsa, herhangi bir kullanıcı başka bir kullanıcıyı admin yapabilir.
+
+### **`/robots.txt`**
+   - Bu dosya, arama motorlarına hangi sayfaları tarayıp taramayacağını söyler. Bazen geliştiriciler hassas dizinleri burada açıkça belirtir (örneğin `/admin`, `/backup` gibi).
+   - Bu dosya incelenerek hassas endpointler keşfedilebilir.
+
+### **Çerez (Cookie) Manipülasyonu (`Admin=false` → `Admin=true`)**
+   - Sunucu, kullanıcının admin olup olmadığını kontrol etmek için bir çerez kullanıyor (`Admin=false`).
+   - Bu çerezi `Admin=true` olarak değiştirerek yetki yükseltme denemesi yapılıyor.
+   - Eğer sunucu bu değeri doğrulamıyorsa, basit bir çerez değişikliğiyle admin yetkileri kazanılabilir.
+
+### **Burp Repeater ile İstek Manipülasyonu**
+   - Bir e-posta gönderme isteği yakalanıyor (örneğin bir form submission).
+   - Bu istek **Burp Repeater**’a gönderilerek manipüle ediliyor.
+   - İstek gövdesindeki JSON’a `"roleid":2` ekleniyor (muhtemelen `2`, admin rolünün ID’si).
+   - Eğer sunucu rol değişikliğini doğrulamıyorsa, bu şekilde yetki yükseltilebilir.
+
+### **API Anahtarı**
+   - Bazı API’ler, yetkilendirme için bir API anahtarı kullanır.
+   - Eğer bu anahtar ele geçirilirse (örneğin bir JavaScript dosyasında veya bir istekte), yetkisiz API çağrıları yapılabilir.
+
+### **`X-Original-URL: /invalid`**
+   - Bu header, bazen uygulamanın orijinal URL’ini override etmek için kullanılır.
+   - Örneğin, bir WAF (Web Application Firewall) veya reverse proxy, bu header’a bakarak routing yapıyor olabilir.
+   - `/invalid` gibi geçersiz bir URL verilerek uygulamanın hata mesajlarından bilgi toplanabilir veya bypass denemeleri yapılabilir.
