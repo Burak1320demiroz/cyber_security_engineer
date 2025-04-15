@@ -36,6 +36,8 @@
       - IDOR (Insecure Direct Object Reference)
    - CTF
       - CTF1 - Rapor
+      - CTF2 - Rapor
    - Kali Linux
+   - FFUF
 
 -------------------------------------
