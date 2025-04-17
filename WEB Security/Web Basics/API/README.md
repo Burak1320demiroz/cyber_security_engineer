@@ -1,2 +1,0 @@
-# API
-- API (Application Programming Interface - Uygulama Programlama Arayüzü), yazılımların birbirleriyle iletişim kurmasını ve veri alışverişi yapmasını sağlayan bir arayüzdür. API'ler, farklı sistemlerin birbiriyle etkileşime girmesi için standart bir yol sunar.
