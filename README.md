@@ -1,12 +1,22 @@
 # Cyber Security Engineer
 
+- Cyber Security Tools
+   - Kali Linux
+   - FFUF
+   - Burp Suite
+   - Phoneinfoga
+   - Sqlmap
+   - SecLists
+ 
+-------------------------------------
+
 - Cryptography
    - Asymmetric Encryption (Asimetrik Şifreleme)
    - Symmetrical Encryption (Simetrik Şifreleme)
    - Brute Force Attack (Kaba Kuvvet Saldırısı)
    - Hash Function (Karma İşlev)
    - Public Key Infrastructure (Açık Anahtar Altyapısı)
-   - SSL/TLS 
+   - SSL/TLS
 
 -------------------------------------
 
@@ -19,7 +29,6 @@
       - SOP (Same Origin Policy) (Aynı Menşe Politikası)
       - API 
    - OWASP Top 10
-   - Burp Suite
    - SQL injection
       - Error Based SQL Injection
       - Union Based SQL Injection
@@ -35,10 +44,21 @@
    - Access control vulnerabilities (Erişim Kontrol Zaafları)
    - Server-Side Request Forgery (Sunucu Tarafı İstek Sahteciliği)
       - IDOR (Insecure Direct Object Reference)
-   - CTF
-      - CTF1 - Rapor
-      - CTF2 - Rapor
-   - Kali Linux
-   - FFUF
 
+-------------------------------------
+
+- Cryptography
+   - Asymmetric Encryption (Asimetrik Şifreleme)
+   - Symmetrical Encryption (Simetrik Şifreleme)
+   - Brute Force Attack (Kaba Kuvvet Saldırısı)
+   - Hash Function (Karma İşlev)
+   - Public Key Infrastructure (Açık Anahtar Altyapısı)
+   - SSL/TLS 
+
+-------------------------------------
+
+- CTF
+   - CTF1 - Rapor
+   - CTF2 - Rapor
+ 
 -------------------------------------
