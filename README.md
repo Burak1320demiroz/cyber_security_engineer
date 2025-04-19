@@ -7,16 +7,6 @@
    - Phoneinfoga
    - Sqlmap
    - SecLists
- 
--------------------------------------
-
-- Cryptography
-   - Asymmetric Encryption (Asimetrik Şifreleme)
-   - Symmetrical Encryption (Simetrik Şifreleme)
-   - Brute Force Attack (Kaba Kuvvet Saldırısı)
-   - Hash Function (Karma İşlev)
-   - Public Key Infrastructure (Açık Anahtar Altyapısı)
-   - SSL/TLS
 
 -------------------------------------
 
