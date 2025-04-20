@@ -6,7 +6,12 @@
    - Burp Suite
    - Phoneinfoga
    - Sqlmap
+   - OWASP ZAP
+   - Sqlmap
    - SecLists
+   - Wireshark
+   - Tcpdump
+   - Snort
 
 -------------------------------------
 
@@ -34,6 +39,8 @@
    - Access control vulnerabilities (Erişim Kontrol Zaafları)
    - Server-Side Request Forgery (Sunucu Tarafı İstek Sahteciliği)
       - IDOR (Insecure Direct Object Reference)
+
+-------------------------------------
 
 -------------------------------------
 
