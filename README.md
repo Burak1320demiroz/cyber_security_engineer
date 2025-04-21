@@ -4,14 +4,18 @@
    - Kali Linux
    - FFUF
    - Burp Suite
-   - Phoneinfoga
    - Sqlmap
    - OWASP ZAP
-   - Sqlmap
    - SecLists
    - Wireshark
-   - Tcpdump
    - Snort
+   - XSSer
+   - DirBuster
+   - Hydra
+   - Gobuster
+   - Aircrack-ng
+   - Metasploit
+   - Nikto
 
 -------------------------------------
 
