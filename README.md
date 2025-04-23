@@ -16,6 +16,7 @@
    - Aircrack-ng
    - Metasploit
    - Nikto
+   - rustscan
 
 -------------------------------------
 
