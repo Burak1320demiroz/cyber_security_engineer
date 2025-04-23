@@ -51,5 +51,16 @@
 
 - wc: Bize satır sayısı, kelime sayısını byte cinsinden boyutunu bize sıralı olarak verir.
 
+- free -h
+
+- top, htop
+
+- df -h
+
+- ncdu
+
+
+
+
 
 
