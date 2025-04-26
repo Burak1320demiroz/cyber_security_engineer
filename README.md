@@ -51,6 +51,10 @@
 
 -------------------------------------
 
+- OSINT
+
+-------------------------------------
+
 - Cryptography
    - Asymmetric Encryption (Asimetrik Şifreleme)
    - Symmetrical Encryption (Simetrik Şifreleme)
