@@ -1,25 +1,5 @@
 # Cyber Security Engineer
 
-- Cyber Security Tools
-   - Kali Linux
-   - FFUF
-   - Burp Suite
-   - Sqlmap
-   - OWASP ZAP
-   - SecLists
-   - Wireshark
-   - Snort
-   - XSSer
-   - DirBuster
-   - Hydra
-   - Gobuster
-   - Aircrack-ng
-   - Metasploit
-   - Nikto
-   - Rustscan
-
--------------------------------------
-
 - WEB Security
    - Web Basics 
       - Http and Https (Hypertext Transfer Protocol)
@@ -45,13 +25,6 @@
    - Server-Side Request Forgery (Sunucu Tarafı İstek Sahteciliği)
       - IDOR (Insecure Direct Object Reference)
 
--------------------------------------
-
-- Network and Firewall
-
--------------------------------------
-
-- OSINT
 
 -------------------------------------
 
