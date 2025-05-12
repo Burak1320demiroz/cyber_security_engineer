@@ -1,4 +1,4 @@
-# SSL-TLS 
+# SSL-TLS
 
 - SSL (Secure Sockets Layer): Güvenli Yuva Katmanı
 - TLS (Transport Layer Security): Taşıma Katmanı Güvenliği
