@@ -1,6 +1,6 @@
 # Cyber Security Engineer
 
-- WEB Security
+**🔐Web Application Security**
    - Web Basics 
       - Http and Https (Hypertext Transfer Protocol)
       - How Does the Web Work? (Web Nasıl Çalışır?)
@@ -24,22 +24,84 @@
    - Access control vulnerabilities (Erişim Kontrol Zaafları)
    - Server-Side Request Forgery (Sunucu Tarafı İstek Sahteciliği)
       - IDOR (Insecure Direct Object Reference)
-
+   - Server-side template injection (Sunucu tarafı şablon enjeksiyonu)
+   - JSON web tokens (JWT)
 
 -------------------------------------
 
-- Cryptography
+**📱Mobile Application Security**
+   - Mobile Basics
+
+-------------------------------------
+
+**🔐Cryptography**
    - Asymmetric Encryption (Asimetrik Şifreleme)
    - Symmetrical Encryption (Simetrik Şifreleme)
-   - Brute Force Attack (Kaba Kuvvet Saldırısı)
    - Hash Function (Karma İşlev)
    - Public Key Infrastructure (Açık Anahtar Altyapısı)
+   - Private/Public Key Pair (Kapalı/Açık Anahtar Çifti)
    - SSL/TLS 
+   - Brute Force Attack (Kaba Kuvvet Saldırısı)
 
 -------------------------------------
 
-- CTF
-   - CTF1 and Rapor
-   - CTF2 and Rapor
- 
+**Cisco CCNA**
+   - What is Network
+   - OSI
+   - TCP-IP
+   - LAN
+   - Ethernet
+   - Switch and Router
+   - DNS
+   - Internet Protocol
+   - Subnet and Subnetting
+   - CDP 
+   - LLDP
+   - ARP
+   - ICMP
+   - ACL
+   - DHCP
+   - NAT
+   - PAT
+   - VLAN
+   - DTP
+   - VTP
+   - RIPv2
+   - NTP
+   - WLAN
+   - IPv4 and IPv6
+   - STP
+   - PVST
+   - BPDU
+   - Etherchannel
+   - HSRP
+   - SPAN
+   - IP-SLA
+   - EIGRP
+   - OSPF
+   - DR-BDR
+   - OSPFv2, Multiarea OSPFv3 andOSPFv3
+   - WAN 
+   - VPN
+   - PPP and Multi PPP 
+   - PAP
+   - CHAP
+   - PPoE
+   - GRE
+   - BGP and EBGP
+   - SNMP
+   - SDN
+   - APIC-EM
+   - QoS
+   - ACL
+   - PAT
+   - SSH
+
 -------------------------------------
+
+**Tools**
+   - Docker
+   - Packet Tracer
+   - FFUF
+   - BurpSuite
+   - Wireshark
