@@ -7,7 +7,7 @@
       - URL (Uniform Resource Locator) (Tekdüzen Kaynak Bulucu)
       - DOM (Document Object Model) (Belge Nesle Modeli)
       - SOP (Same Origin Policy) (Aynı Menşe Politikası)
-      - API 
+      - API (Application Programming Interface)
    - OWASP Top 10
    - SQL injection
       - Error Based SQL Injection
@@ -42,6 +42,15 @@
    - Private/Public Key Pair (Kapalı/Açık Anahtar Çifti)
    - SSL/TLS 
    - Brute Force Attack (Kaba Kuvvet Saldırısı)
+
+-------------------------------------
+
+**Tools**
+   - Docker
+   - Packet Tracer
+   - FFUF
+   - BurpSuite
+   - Wireshark
 
 -------------------------------------
 
@@ -98,10 +107,3 @@
    - SSH
 
 -------------------------------------
-
-**Tools**
-   - Docker
-   - Packet Tracer
-   - FFUF
-   - BurpSuite
-   - Wireshark
