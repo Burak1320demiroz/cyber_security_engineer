@@ -1,66 +1,54 @@
-# Kali Linux
+# Kali Linux - Temel Komutlar Rehberi
 
-# Kali Linux
+## Paket Yönetimi
+```bash
+apt-get clean      - Kullanılmayan paket dosyalarını siler (depo temizliği)
+apt-get update     - Paket listesini yeniler (güncel veritabanı)
+apt-get upgrade    - Tüm yüklü yazılımları günceller
+```
 
-- apt-get clean : apt paket yöneticisi tarafından indirilen ama artık kullanılmayan paket dosyalarını siler.
+## Dosya/Dizin İşlemleri
+```bash
+ls       - Dizindeki dosyaları listeler
+  ls -l   - Detaylı listeleme (izinler, boyut, tarih)
+  ls -la  - Gizli dosyalar dahil tam liste
 
-- apt-get update : Sistemi Günceller
+cd       - Dizin değiştir
+  cd ..  - Bir üst dizine çık
 
-- apt-get upgrade : Tüm programları günceller.
+mkdir    - Yeni klasör oluştur
+touch    - Yeni dosya oluştur
+rm -r    - Dosya/klasör sil (recursive)
+cp       - Kopyalama yapar
+mv       - Taşır veya yeniden adlandırır
+```
 
-- ctrl + c : İşlemi sonlandırır.
+## Sistem Bilgileri
+```bash
+uname -a  - Sistem ve çekirdek bilgileri
+whoami    - Aktif kullanıcıyı gösterir
+pwd       - Bulunulan dizin yolunu gösterir
+```
 
-- ls :Aktif klasördeki tüm dosya ve klasörleri listeler.
+## Metin İşlemleri
+```bash
+cat       - Dosya içeriğini göster
+  cat -n  - Satır numaralarıyla göster
+head      - Dosyanın ilk 10 satırını göster
+```
 
-- ls –l: Aktif klasördeki dosya ve klasörün özelliklerini gösterir.
+## Sistem İzleme
+```bash
+free -h   - Bellek kullanımı
+top/htop  - Sistem kaynak takibi
+df -h     - Disk kullanımı
+ncdu      - Disk analiz aracı
+```
 
-- ls –la: Aktif dosya ve klasörleri listelememizi sağlar.
-
-- clear: Terminal ekranını temizlememizi sağlar.
-
-- pwd: Bulunulan dizini ekrana yazdıran komuttur. Hangi dizinin içerisindeysek onu gösterir.
-
-- history : Terminal geçmişini gösterir yani kullandığımız tüm komutları okumamızı sağlar.
-
-- cd: Dizinler arası geçiş yapmayı sağlar.
-
-- cd .. : Geri gider.
-
-- mkdir: Yeni klasör oluşturmak için kullanılır.
-
-- touch: Dosya oluşturmak için kullanılır.
-
-- rm -r: Dosya ve klasör silmek için kullanılır.
-
-- cat: Dosya içerisinde okuma yapmamızı sağlar yani içeriği görmemizi sağlar.
-
-- cat –n: Satır numaraları ile ekrana yazdırılmasını sağlar
-
-- cp: Kopyalamaya yarar.
-
-- mv: Dosya ve klasörleri taşımak için veya yeniden adlandırmak için kullanılır.
-	- mv dosya.txt /home/burak/Documents/
-	- mv eski_ad.txt yeni_ad.txt
-	- mv /home/burak/Downloads/proje /home/burak/Documents/
-	- mv dosya1.txt dosya2.txt /home/burak/Documents/
-- head: Verilen dosyanın varsayılan ilk 10 satırını görmemizi sağlar.
-
-- uname –a: İşletim sistemi hakkında bilgi almamızı sağlar.
-
-- whoami : Hangi kullanıcı olduğunu gösterir.
-
-- wc: Bize satır sayısı, kelime sayısını byte cinsinden boyutunu bize sıralı olarak verir.
-
-- free -h
-
-- top, htop
-
-- df -h
-
-- ncdu
-
-
-
-
-
-
+## Diğer Yararlı Komutlar
+```bash
+clear     - Ekranı temizle
+history   - Komut geçmişi
+ctrl+c    - İşlemi durdur
+wc        - Satır/kelime/karakter sayımı
+```
