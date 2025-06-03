@@ -1,4 +1,4 @@
-# Kali Linux - Önemli Güvenlik Araçları Rehberi
+# Önemli Güvenlik Araçları
 
 ### Web Uygulama Güvenliği
 - **BurpSuite** - Web uygulama güvenlik test aracı
@@ -36,7 +36,6 @@
 - **Auto GPT** - Otomatik pentest aracı
 
 ### Diğer Önemli Araçlar
-- **Docker** - Konteynerleştirme platformu [Resmi Site](https://www.docker.com)
 - **OpenVAS (GVM)** - Açık kaynak zafiyet tarayıcı
 - **Lynis** - Sistem denetim aracı
 - **Empire** - Post-exploitation framework
