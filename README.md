@@ -33,7 +33,7 @@
 
 -------------------------------------
 
-**Ctf Labs** [ctf_labs --> README.md](https://github.com/Burak1320demiroz/Cyber_Security_Engineer/tree/main/ctf_labs)
+**Ctf Labs** [ctf_labs --> README.md](https://github.com/Burak1320demiroz/cyber_security_engineer/tree/main/ctf_lab)
 
 
 -------------------------------------

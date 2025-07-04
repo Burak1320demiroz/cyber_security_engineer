@@ -1,6 +1,4 @@
-https://portswigger.net/web-security/all-labs
-
-
+- Portswigger
    - SQL injection (18 labs)
    - Path traversal vulnerabilities (6 labs)
    - Information disclosure vulnerabilities (5 labs)
