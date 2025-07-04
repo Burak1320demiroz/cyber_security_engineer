@@ -1,0 +1,37 @@
+# Cross-site scripting (XSS)
+
+### Portswigger Labları Cözümleri
+
+* **lab 1**: Reflected Cross-site Scripting (Yansıyan Cross-site Scripting)
+* **lab 2**: Stored Cross-site Scripting (Depolanmış Cross-site Scripting)
+* **lab 3**: DOM-based Cross-site Scripting (DOM Tabanlı Cross-site Scripting)
+* **lab 4**: Cross-site Scripting (XSS) in a JSON response (JSON Yanıtında XSS)
+* **lab 5**: Cross-site Scripting (XSS) via HTTP Response Splitting (HTTP Yanıt Bölmesi ile XSS)
+* **lab 6**: Reflected Cross-site Scripting (XSS) in a URL parameter (URL Parametresinde Yansıyan XSS)
+* **lab 7**: Stored Cross-site Scripting (XSS) in a comment form (Yorum Formunda Depolanmış XSS)
+* **lab 8**: Cross-site Scripting (XSS) in a file upload (Dosya Yükleme İçinde XSS)
+* **lab 9**: Cross-site Scripting (XSS) with an embedded Flash object (Gömülü Flash Nesnesi ile XSS)
+* **lab 10**: Reflected Cross-site Scripting (XSS) in an error message (Hata Mesajında Yansıyan XSS)
+* **lab 11**: Cross-site Scripting (XSS) via JavaScript execution in an image (Bir Görüntüde JavaScript Çalıştırma ile XSS)
+* **lab 12**: Cross-site Scripting (XSS) via a malicious redirect (Zararlı Yönlendirme ile XSS)
+* **lab 13**: Cross-site Scripting (XSS) in a login form (Giriş Formunda XSS)
+* **lab 14**: Stored Cross-site Scripting (XSS) in a search field (Arama Alanında Depolanmış XSS)
+* **lab 15**: Cross-site Scripting (XSS) with a reflected file upload (Yansıyan Dosya Yükleme ile XSS)
+* **lab 16**: Cross-site Scripting (XSS) via a vulnerable third-party widget (Hassas Üçüncü Taraf Widget'ı ile XSS)
+* **lab 17**: Reflected Cross-site Scripting (XSS) via an XML-based payload (XML Tabanlı Yüklemler ile Yansıyan XSS)
+* **lab 18**: DOM-based Cross-site Scripting (XSS) with document.location (document.location ile DOM Tabanlı XSS)
+* **lab 19**: Stored Cross-site Scripting (XSS) via an HTTP-only cookie (HTTP Sadece Çerezi ile Depolanmış XSS)
+* **lab 20**: Cross-site Scripting (XSS) in a WebSocket request (WebSocket İsteğinde XSS)
+* **lab 21**: Cross-site Scripting (XSS) via JavaScript protocol (JavaScript Protokolü ile XSS)
+* **lab 22**: Cross-site Scripting (XSS) in a subdomain (Alt Alan Adında XSS)
+* **lab 23**: Stored Cross-site Scripting (XSS) via an HTML injection (HTML Enjeksiyonu ile Depolanmış XSS)
+* **lab 24**: Reflected Cross-site Scripting (XSS) via an HTTP header (HTTP Başlığı ile Yansıyan XSS)
+* **lab 25**: Cross-site Scripting (XSS) in a URL fragment (URL Parçasında XSS)
+* **lab 26**: Cross-site Scripting (XSS) in a JSON Web Token (JWT) (JSON Web Token (JWT) İçinde XSS)
+* **lab 27**: Cross-site Scripting (XSS) in a password reset functionality (Şifre Sıfırlama Fonksiyonunda XSS)
+* **lab 28**: Stored Cross-site Scripting (XSS) in a profile page (Profil Sayfasında Depolanmış XSS)
+* **lab 29**: Cross-site Scripting (XSS) via a third-party JavaScript library (Üçüncü Taraf JavaScript Kütüphanesi ile XSS)
+* **lab 30**: Cross-site Scripting (XSS) via a vulnerable JavaScript framework (Hassas JavaScript Çatısı ile XSS)
+
+--- 
+
