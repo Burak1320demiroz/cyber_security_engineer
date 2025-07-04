@@ -10,3 +10,6 @@
 - Server-side template injection (7 labs)
 - JSON web tokens (JWT) (8 Labs)
 - Cross-site scripting (XSS) (30 Labs)
+
+
+link ==> https://portswigger.net/web-security/all-labs
