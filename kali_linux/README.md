@@ -49,6 +49,7 @@ ncdu      - Disk analiz aracı
 ```bash
 clear     - Ekranı temizle
 history   - Komut geçmişi
+for i in {9..30}; do mkdir "lab$i"; done
 ctrl+c    - İşlemi durdur
 wc        - Satır/kelime/karakter sayımı
 ```
