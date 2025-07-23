@@ -1,64 +1,93 @@
-# Docker
+### 🐳 **Docker Komutları – Sık Kullanılanlar (Temizlenmiş & Genelleştirilmiş)**
 
-###  **Docker Başlatma ve İmaj İşlemleri**
+####  Docker Servisi ve İmaj İşlemleri
+
 ```bash
-systemctl --user start docker-desktop     # Docker'ı başlat
-docker pull ubuntu                        # Ubuntu imajını indir
-docker images                             # Yüklü imajları göster
+systemctl start docker                            # Docker servisini başlat (Linux için)
+docker pull <image>                               # İmaj indir (örn: ubuntu, redis)
+docker images                                     # Mevcut imajları listele
+docker rmi <image_id|image_name>                  # Belirli imajı sil
+docker rmi $(docker images -q)                    # Tüm imajları sil
 ```
 
 ---
 
-###  **Container Oluşturma ve Yönetimi**
+####  Container Oluşturma, Çalıştırma ve Yönetim
+
 ```bash
-docker run redis                          # Redis container başlat
-docker run ubuntu                         # Ubuntu container başlat (varsayılan)
-docker run -it ubuntu                     # Etkileşimli Ubuntu terminali
-exit                                      # Container'dan çık
-docker ps                                 # Çalışan container'ları listele
-docker ps -a                              # Tüm container'ları listele (çalışan + durdurulmuş)
-docker container ls -a                    # Aynı şekilde tüm container'ları gösterir
+docker run <image>                                # Basit container başlat
+docker run -it <image>                            # Etkileşimli terminal ile başlat
+docker run -d <image>                             # Arka planda çalıştır
+docker run --name <name> <image>                  # İsim vererek container başlat
+docker start <name|id>                            # Durdurulmuş container’ı başlat
+docker stop <name|id>                             # Container'ı durdur
+docker restart <name|id>                          # Container'ı yeniden başlat
+docker rm <name|id>                               # Container sil
+docker rm $(docker ps -aq)                        # Tüm container'ları sil
+docker ps                                         # Çalışan container’ları listele
+docker ps -a                                      # Tüm container’ları (çalışan + duran) listele
 ```
 
 ---
 
-###  **İsimlendirme ve Başlatma**
+####  Port, Network ve Environment Ayarları
+
 ```bash
-docker run -it --name bash_ubuntu ubuntu     # 'bash_ubuntu' adında container
-docker start bash_ubuntu                     # Container'ı başlat
-docker stop bash_ubuntu                      # Container'ı durdur
-docker rm bash_ubuntu                        # Container'ı sil
-docker container rm $(docker container ls -aq)  # Tüm container'ları sil
+docker run -p <host_port>:<container_port> <image>              # Port yönlendirme
+docker run --network host <image>                               # Host ağı kullan
+docker run -e VAR=value <image>                                 # Ortam değişkeni ile başlat
+docker run -v <host_path>:<container_path> <image>              # Volume (dizin) bağlama
 ```
 
 ---
 
-###  **Farklı Sürümler ve Etiketleme**
+####  Dockerfile ile İmaj Oluşturma (Build)
+
 ```bash
-docker run redis:7                           # Redis 7 imajını çalıştır
-docker image tag ubuntu my-ubuntu            # 'ubuntu' imajını 'my-ubuntu' olarak etiketle
+docker build -t <image_name> .                                  # Dockerfile'dan imaj oluştur
 ```
 
 ---
 
-### **Arka Planda Çalıştırma ve Erişim**
+####  Kayıt ve Arşivleme (.tar ve GPG)
+
 ```bash
-docker run -d redis                          # Redis container'ı arka planda başlat
-docker attach <id>                           # ID ile container’a bağlan
+docker save -o <file.tar> <image>                               # İmajı .tar dosyası olarak kaydet
+docker load -i <file.tar>                                       # .tar imajını yükle
+gpg -c <file.tar>                                               # GPG ile dosyayı şifrele
+gpg --output <file.tar> --decrypt <file.tar.gpg>                # Şifrelenmiş dosyayı çöz
+tar -xvf <file.tar>                                             # .tar dosyasını çıkar
 ```
 
 ---
 
-###  **Dockerfile'dan Build Etme ve Port Açma**
+####  Loglar, Erişim ve Etiketleme
+
 ```bash
-docker build -t ctf-2 .                      # Dockerfile'dan imaj oluştur
-docker run -d -p 8080:8080 ctf-2             # Port yönlendirmeyle çalıştır
-docker run -d -m 2g -p 8080:8080 ctf-2       # 2 GB bellek limitiyle çalıştır
+docker logs <name|id>                                           # Logları görüntüle
+docker attach <name|id>                                         # Container'a bağlan
+docker exec -it <name|id> bash                                  # Çalışan container'da terminale gir
+docker tag <image> <new_name:tag>                               # İmaj etiketle
 ```
 
 ---
 
-### **Logları Görüntüleme**
+####  Kullanıcı Ayarları (Docker komutlarını sudo'suz kullanmak için)
+
 ```bash
-docker logs <container_name_or_id>          # Logları göster (örn: jovial_kepler)
+sudo usermod -aG docker $USER
+newgrp docker
 ```
+
+---
+
+####  Ekstra: ROS Uygulamaları için Örnek Docker Komutu
+
+```bash
+docker run -it --network=host \
+  -e ROS_MASTER_URI=http://<master_ip>:11311 \
+  -e ROS_IP=<local_ip> \
+  <image_name>
+```
+
+---
