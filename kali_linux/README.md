@@ -1,4 +1,4 @@
-# Kali Linux - Temel Komutlar Rehberi
+# Kali Linux
 
 ## Paket Yönetimi
 ```bash
