@@ -1,4 +1,4 @@
-###  **Docker Komutları **
+###  Docker Komutları
 
 ####  Docker Servisi ve İmaj İşlemleri
 
