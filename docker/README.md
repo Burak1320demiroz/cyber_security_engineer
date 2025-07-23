@@ -1,4 +1,4 @@
-### 🐳 **Docker Komutları – Sık Kullanılanlar (Temizlenmiş & Genelleştirilmiş)**
+###  **Docker Komutları **
 
 ####  Docker Servisi ve İmaj İşlemleri
 
