@@ -1,0 +1,1 @@
+# DOM-based vulnerabilities (DOM Tabanlı Güvenlik Açıkları)

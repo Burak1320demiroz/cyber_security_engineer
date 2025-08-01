@@ -1,0 +1,1 @@
+# Insecure deserialization (Güvensiz Serileştirme)

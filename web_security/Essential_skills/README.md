@@ -1,0 +1,1 @@
+# Essential skills (Temel beceriler)

@@ -10,6 +10,27 @@
 - Server-side template injection (7 labs)
 - JSON web tokens (JWT) (8 Labs)
 - Cross-site scripting (XSS) (30 Labs)
-
+- Cross-Site Request Forgery (CSRF) (8 labs)
+- Clickjacking (5 labs)
+- DOM-Based Vulnerabilities (3 labs)
+- Cross-Origin Resource Sharing (CORS) (4 labs)
+- XML External Entity (XXE) Injection (4 labs)
+- HTTP Request Smuggling (5 labs)
+- WebSockets (Web Socket Attacks) (4 labs)
+- Web Cache Poisoning (5 labs)
+- Insecure Deserialization (6 labs)
+- HTTP Host Header Attacks (4 labs)
+- OAuth Authentication (4 labs)
+- Essential Skills (5 labs)
+- Prototype Pollution (3 labs)
+- GraphQL API Vulnerabilities (5 labs)
+- Race Conditions (4 labs)
+- NoSQL Injection (4 labs)
+- API Testing (5 labs)
+- Web LLM Attacks (3 labs)
+- Web Cache Deception (3 labs)
 
 link ==> https://portswigger.net/web-security/all-labs
+
+
+

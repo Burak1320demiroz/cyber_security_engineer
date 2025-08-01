@@ -15,39 +15,9 @@
 - **RustScan** - Hızlı port tarama aracı [GitHub](https://github.com/bee-san/RustScan)
 - **Nmap** - Ağ keşif ve güvenlik tarama aracı
 - **NetCat** - Ağ bağlantı aracı
-- **Bettercap** - MITM framework'ü
-- **Ettercap** - Ağ analiz ve MITM aracı
-- **ARPspoof** - ARP spoofing aracı
-- **Tcndump** - Ağ trafik analiz aracı
 
 ### Bilgi Toplama
-- **theHarvester** - E-posta, alt alan adı vb. bilgi toplama
-- **Sherlock** - Kullanıcı adı araştırma aracı
-- **SpiderFoot** - OSINT araştırma aracı
 - **SecLists** - Güvenlik testleri için sözlükler [GitHub](https://github.com/danielmiessler/SecLists)
 
 ### Şifre Kırma
 - **Hashcat** - Gelişmiş şifre kırma aracı [GitHub](https://github.com/hashcat/hashcat)
-
-### Yapay Zeka Destekli Araçlar
-- **Pentest GPT** - Pentest otomasyon aracı
-- **Chaos GPT** - Güvenlik test aracı
-- **Vuln GPT** - Zafiyet analiz aracı
-- **Auto GPT** - Otomatik pentest aracı
-
-### Diğer Önemli Araçlar
-- **OpenVAS (GVM)** - Açık kaynak zafiyet tarayıcı
-- **Lynis** - Sistem denetim aracı
-- **Empire** - Post-exploitation framework
-- **Angry IP Scanner** - Ağ tarama aracı
-- **PRTG Network Monitor** - Ağ izleme aracı (SNMP, NetFlow)
-- **Evilginx2** - Phishing framework'ü
-- **Modlishka** - Reverse proxy phishing aracı
-- **Weeman** - HTTP sunucusu phishing aracı
-- **VDS/Virtual Box** - Sanal makine çözümleri
-- **TOR Browser** - Anonim tarayıcı
-- **DuckDuckGo** - Gizlilik odaklı arama motoru
-- **10minuteemail** - Geçici e-posta servisi
-- **Onion Share** - Güvenli dosya paylaşım aracı
-
-Not: Tüm araçlar Kali Linux reposunda bulunmaktadır. Kurulum için `sudo apt install <paket-adı>` komutunu kullanabilirsiniz. GitHub bağlantıları araçların kaynak kodlarına yönlendirir.

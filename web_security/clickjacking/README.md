@@ -1,0 +1,1 @@
+# Clickjacking (Tıklama Hilesi)

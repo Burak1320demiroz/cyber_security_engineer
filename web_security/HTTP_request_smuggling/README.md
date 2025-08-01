@@ -1,0 +1,1 @@
+# HTTP request smuggling (HTTP İstek Kaçakçılığı)

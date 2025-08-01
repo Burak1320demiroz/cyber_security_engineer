@@ -1,0 +1,1 @@
+# XML external entity (XXE) injection (XML Dış Varlık Enjeksiyonu)
